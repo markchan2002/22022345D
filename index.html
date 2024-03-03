@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>22022345D</title>
+  <style>
+    table {
+      width: 80%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    caption {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    img {
+      height: 300px;
+      width: auto;
+      margin-bottom: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to my personal website, 22022345D, CHAN Chun Ki</h1>
+    <button onclick="showSection(0)">Basic Information</button>
+    <button onclick="showSection(1)">My Interest1</button>
+    <button onclick="showSection(2)">My Interest2</button>
+  </header>
+  <main>
+    <section class="active">
+      <h2>Basic Information</h2>
+      <img src="myPicture.jpg" alt="My Picture">
+      <p>Hello everyone!!! I am Mark, (CHAN Chun Ki, 22022345D, from 63428-SYD). I am studying Data Science and Analytics program which is under Department of Applied Mathematic.</p>
+    </section>
+    <section>
+      <h2>My Interest</h2>
+      <img src="cnn.png" alt="CNN Picture">
+      <p>In my program, I am interested in machine learning and coding which is python because most of machine learning algorithm is using python to modelling.</p>
+    </section>
+    <section>
+      <h2>My Interest2</h2>
+      <img src="sleep.jpg" alt="Sleeping">
+      <p>In my life time, I like sleeping because it can make me relax.</p>
+    </section>
+  </main>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/WNTLaM2E-uQ" frameborder="0" allowfullscreen></iframe>
+  <table>
+    <caption>March of 2024</caption>
+    <thead>
+      <tr>
+        <th>Sun</th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        <th>Sat</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>1</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+        <td>16</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>24</td>
+        <td>25</td>
+        <td>26</td>
+        <td>27</td>
+        <td>28</td>
+        <td>29</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>31</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <script>
+    var sections = document.querySelectorAll('section');
+
+    function showSection(index) {
+      for (var i = 0; i < sections.length; i++) {
+        if (i === index) {
+          sections[i].classList.add('active');
+        } else {
+          sections[i].classList.remove('active');
+        }
+      }
+    }
+  </script>
+</body>
+</html>
